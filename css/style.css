@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
 :root {
   --clr-primary: #ea1b48;
   --clr-black: #000;
@@ -212,7 +213,7 @@ img {
   font-size: 12px;
   position: absolute;
   top: 0;
-  right: -132px;
+  right: -134px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transform-origin: 0 0;
