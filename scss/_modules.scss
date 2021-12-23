@@ -1,0 +1,61 @@
+.container {
+  width: 92%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 65%;
+  }
+}
+
+.member {
+  padding-right: 12px;
+  position: relative;
+  font-size: 14px;
+
+  &-image {
+    display: flex;
+    margin-bottom: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    img {
+      transition: transform 0.4s ease;
+    }
+
+    &:hover {
+      filter: grayscale(100%) blur(1px);
+      transition: filter 0.5s ease;
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &-name {
+    font-weight: 600;
+  }
+
+  &-profession {
+    text-transform: uppercase;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: -132px;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    width: 130px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+
+    &-profession {
+      font-size: 14px;
+      right: -135px;
+    }
+  }
+}

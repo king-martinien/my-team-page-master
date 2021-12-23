@@ -1,13 +1,35 @@
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    min-height: 100vh;
+*::selection {
+  background-color: var(--clr-primary);
+  color: #fff;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-weight: 400;
+}
+
+body {
+  padding: 50px 0 25px;
+  font-family: Poppins, "sans-serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
